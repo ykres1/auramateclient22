@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "auramateclient",
+  "version": "${version}",
+  "name": "AuraMateClient",
+  "description": "See-through panel with optimizers (Lunge Swap, Fast Shield, Wind Charge, Cobweb, Elytra Swap, Crystal, Anchor), visuals, HUD and a snowy aurora title screen.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.auramate.client.AuraMate"],
+    "client": ["dev.auramate.client.AuraMateClient"]
+  },
+  "mixins": ["auramateclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
